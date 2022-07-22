@@ -25,13 +25,15 @@
     </div>
 
     <div class="payment">
-      <label for="">Payment Mthods :</label>
+      <label for="">Payment :</label>
       <select id="payment">
-        <option>Select Any option</option>
+        <option disabled selected>Choose</option>
         <option>Token</option>
         <option>Card</option>
       </select>
     </div>
+
+    
 
     <div class="fare">
       Fare :
@@ -40,7 +42,7 @@
 
     <div class="button">
       <button id="btn1" onclick="calculateFare()">Calculate</button>
-      <button class="btn2" onclick="resetValue()">Reset All</button>
+      <button class="btn2" onclick="resetValue()">Reset</button>
     </div>
 
     <script src="app.js"></script>
