@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="warraper" type="button">
+        <label>Source Station : </label>
+        <select id="slct1">
+          <option disabled selected>Choose</option>
+        </select>
+      </div>
+      <div class="station">
+        <label>Destination Station : </label>
+        <select id="slct2">
+            <option disabled selected>Choose</option>
+        </select>
+        
+      </div>
+    </div>
+
+    <div class="payment">
+      <label for="">Payment Mthods :</label>
+      <select id="payment">
+        <option>Select Any option</option>
+        <option>Token</option>
+        <option>Card</option>
+      </select>
+    </div>
+
+    <div class="fare">
+      Fare :
+      <input type="text" id="fare" placeholder="" />
+    </div>
+
+    <div class="button">
+      <button id="btn1" onclick="calculateFare()">Calculate</button>
+      <button class="btn2" onclick="resetValue()">Reset All</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
